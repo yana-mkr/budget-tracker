@@ -9,7 +9,7 @@ request.onupgradeneeded = ({ target }) => {
 }
 
 request.onsuccess = ({ target }) => {
-    let db = target.result;
+    db = target.result;
     console.log(db)
     if (navigator.onLine) {
         check()
